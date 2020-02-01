@@ -65,6 +65,7 @@ int main()
         printf("Hello TrendingTechnologies\n");
         return 0;
 }
+
 save and run the program using GraalVM bash
 To set up the LLVM toolchain support for GraalVM, execute the following commands:
 $ gu install llvm-toolchain
@@ -76,10 +77,15 @@ $Hello TrendingTechnologies
 Java (SpringBoot Application):
 Run the existing basic spring boot application with GraalVM by making it as docker image.
 Create a Dockerfile for the existing SpringBoot application.
+
 Dockerfile:-
 Clone the ‘springboot-graalvm’ project and do the ./mvnw clean install
+
+This is created by Trending Technologies Pvt Ltd. Live training please contact info@trendingtechnologies.net +91-7353122882 (Whatsapp only) Send enquires from www.trendingtechnologies.in www.trendingtechnologies.net www.trendingtechnologies.asia
+
 Do the Docker build and run the application using docker run
 Here is the Docker file for Just understanding.
+
 FROM oracle/graalvm-ce:19.3.1
 copy target/springboot-graalvm.jar springboot-graalvm.jar
 EXPOSE 8095
